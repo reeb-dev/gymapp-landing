@@ -1,12 +1,17 @@
 <main class="landing">
   <section class="landing__hero">
-    <img
-      class="landing__logo"
-      src="gymfino.jpeg"
-      width="280"
-      height="280"
-      alt="Logo Gym Fitness Center"
-    />
+    <picture>
+      <source srcset="gymfino.webp" type="image/webp" />
+      <img
+        class="landing__logo"
+        src="gymfino.jpg"
+        width="280"
+        height="280"
+        alt="Logo Gym Fitness Center"
+        decoding="async"
+        fetchpriority="high"
+      />
+    </picture>
 
     <p class="landing__brand">Gym Fitness Center</p>
     <h1 class="landing__headline">Entrenamiento funcional</h1>
@@ -47,16 +52,60 @@
 
     <div class="landing__grid">
       <figure class="landing__shot">
-        <img src="machines/machine-01.jpg" alt="Máquina de piernas y rack del gym" width="640" height="640" loading="lazy" />
+        <picture>
+          <source srcset="machines/machine-01.webp" type="image/webp" />
+          <img
+            src="machines/machine-01.jpg"
+            alt="Máquina de piernas y rack del gym"
+            width="640"
+            height="640"
+            sizes="(min-width: 640px) 50vw, 100vw"
+            loading="lazy"
+            decoding="async"
+          />
+        </picture>
       </figure>
       <figure class="landing__shot">
-        <img src="machines/machine-02.jpg" alt="Zona de fuerza con máquinas amarillas" width="640" height="640" loading="lazy" />
+        <picture>
+          <source srcset="machines/machine-02.webp" type="image/webp" />
+          <img
+            src="machines/machine-02.jpg"
+            alt="Zona de fuerza con máquinas amarillas"
+            width="640"
+            height="640"
+            sizes="(min-width: 640px) 50vw, 100vw"
+            loading="lazy"
+            decoding="async"
+          />
+        </picture>
       </figure>
       <figure class="landing__shot">
-        <img src="machines/machine-03.jpg" alt="Sala de entrenamiento con racks y bancos" width="640" height="640" loading="lazy" />
+        <picture>
+          <source srcset="machines/machine-03.webp" type="image/webp" />
+          <img
+            src="machines/machine-03.jpg"
+            alt="Sala de entrenamiento con racks y bancos"
+            width="640"
+            height="640"
+            sizes="(min-width: 640px) 50vw, 100vw"
+            loading="lazy"
+            decoding="async"
+          />
+        </picture>
       </figure>
       <figure class="landing__shot">
-        <img src="machines/machine-04.jpg" alt="Máquinas y bancos de musculación" width="640" height="640" loading="lazy" />
+        <picture>
+          <source srcset="machines/machine-04.webp" type="image/webp" />
+          <img
+            src="machines/machine-04.jpg"
+            alt="Máquinas y bancos de musculación"
+            width="640"
+            height="640"
+            sizes="(min-width: 640px) 50vw, 100vw"
+            loading="lazy"
+            decoding="async"
+          />
+        </picture>
       </figure>
     </div>
   </section>
@@ -163,13 +212,18 @@
 
     <div class="landing__place">
       <figure class="landing__facade">
-        <img
-        src="fachada-gfc-avellaneda-2020.jpg"
-        alt="Fachada de Gym Fitness Center en Avellaneda 2020, Coronel Suárez: puerta, cartel GIMNASIO y número 2020"
-          width="1600"
-          height="1200"
-          loading="lazy"
-        />
+        <picture>
+          <source srcset="fachada-gfc-avellaneda-2020.webp" type="image/webp" />
+          <img
+            src="fachada-gfc-avellaneda-2020.jpg"
+            alt="Fachada de Gym Fitness Center en Avellaneda 2020, Coronel Suárez: puerta, cartel GIMNASIO y número 2020"
+            width="1024"
+            height="1022"
+            sizes="(min-width: 800px) 50vw, 100vw"
+            loading="lazy"
+            decoding="async"
+          />
+        </picture>
       </figure>
 
       <div class="landing__map">
