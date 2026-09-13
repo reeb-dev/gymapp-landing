@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://reeb-dev.github.io/gymapp-landing/sitemap.xml
+Sitemap: https://gymfitnesscenter.com/sitemap.xml
