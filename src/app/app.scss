@@ -372,26 +372,6 @@
   object-position: 62% 58%;
 }
 
-.landing__map-placeholder {
-  display: grid;
-  place-items: center;
-  min-height: 280px;
-  height: 100%;
-  padding: 1.25rem;
-  color: var(--gfc-cyan);
-  text-decoration: none;
-  font-family: 'DM Sans', sans-serif;
-  font-weight: 600;
-  letter-spacing: 0.04em;
-  background: rgba(73, 214, 248, 0.06);
-  border: 1px solid rgba(73, 214, 248, 0.25);
-}
-
-.landing__map-placeholder:hover,
-.landing__map-placeholder:focus-visible {
-  background: rgba(73, 214, 248, 0.12);
-}
-
 .landing__map iframe {
   display: block;
   width: 100%;
