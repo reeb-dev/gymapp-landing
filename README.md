@@ -48,7 +48,7 @@ npm start
 
 ```bash
 npm run build -- --configuration=production --base-href=/
-npx angular-cli-ghpages --dir=dist/gymapp-landing/browser --base-href=/ --cname=gymfitnesscenter.com
+npx angular-cli-ghpages --dir=dist/gymapp-landing/browser --cname=gymfitnesscenter.com
 ```
 
 ## Lighthouse / HTTPS (prod)
