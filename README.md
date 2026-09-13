@@ -50,3 +50,15 @@ npm start
 npm run build -- --configuration=production --base-href=/
 npx angular-cli-ghpages --dir=dist/gymapp-landing/browser --base-href=/ --cname=gymfitnesscenter.com
 ```
+
+## Lighthouse / HTTPS (prod)
+
+GitHub Pages **no puede** emitir certificado ni `https_enforced` mientras el apex esté en **proxy naranja** de Cloudflare (A = `104.21.*` / `172.67.*`).
+
+Para Enforce HTTPS + redirect HTTP→HTTPS:
+
+1. En Cloudflare: registros A del apex a `185.199.108–111.153` con **DNS only (nube gris)**.
+2. CNAME `www` → `reeb-dev.github.io` (DNS only) o redirect `www` → apex.
+3. Activar **Always Use HTTPS** en Cloudflare (o `https_enforced` en GitHub Pages).
+4. Opcional: desactivar Bot Fight / challenge scripts si BP marca *deprecated APIs* en `/cdn-cgi/...`.
+

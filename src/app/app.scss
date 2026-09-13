@@ -39,8 +39,8 @@
   box-shadow:
     0 0 0 2px rgba(73, 214, 248, 0.35),
     0 0 48px rgba(73, 214, 248, 0.22);
-  opacity: 0;
-  animation: rise 0.85s ease forwards 0.1s, pulse-glow 4.5s ease-in-out infinite 1s;
+  /* Visible from paint (LCP). Avoid opacity:0 delay. */
+  animation: pulse-glow 4.5s ease-in-out infinite 1s;
 }
 
 .landing__brand {
@@ -370,6 +370,26 @@
   height: 100%;
   object-fit: cover;
   object-position: 62% 58%;
+}
+
+.landing__map-placeholder {
+  display: grid;
+  place-items: center;
+  min-height: 280px;
+  height: 100%;
+  padding: 1.25rem;
+  color: var(--gfc-cyan);
+  text-decoration: none;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  background: rgba(73, 214, 248, 0.06);
+  border: 1px solid rgba(73, 214, 248, 0.25);
+}
+
+.landing__map-placeholder:hover,
+.landing__map-placeholder:focus-visible {
+  background: rgba(73, 214, 248, 0.12);
 }
 
 .landing__map iframe {
